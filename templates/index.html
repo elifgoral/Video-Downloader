@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+      
+        body{
+            text-align: center;
+            margin-left: auto;
+            background-color: rgba(136, 191, 232,0.7);
+            margin-right: auto;
+        }
+
+        h2{
+            font-size: 2rem;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .text{
+            width: 30rem;
+            height: 2rem;
+            border-radius: 2px;
+            font-size: 1.5rem;
+        }
+
+        .fab{
+            font-size: 5rem;
+            color: red;
+            margin-bottom: 2rem;
+        }
+
+        .btn{
+            border: 2px solid black;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, rgba(30, 115, 180,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+            color: white;
+            font-size: 1.5rem;
+            width: 10%;
+            font-family: "Open Sans", sans-serif;
+            justify-content: center;
+            padding: 0.5rem;
+            cursor: pointer;    
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+<body>
+        <h2> Downloader</h2>
+        <form method="POST" action = "/send_data">
+            <i class="fab fa-youtube"></i>
+            <div class = "form-group">
+                <input class="text" type="text" name = "download_link">
+            </div>
+            <input class="btn" type="submit" value="Download">
+        </form>
+    
+</body>
+</html>
